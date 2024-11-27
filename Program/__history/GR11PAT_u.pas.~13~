@@ -1,0 +1,54 @@
+unit GR11PAT_u;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ExtCtrls, jpeg, Buttons,GR11PAT_u2,GR11PAT_u3;
+
+type
+  TfrmWelkom = class(TForm)
+    imgBackground: TImage;
+    pnlLogo: TPanel;
+    pnlOrganiseerder: TPanel;
+    pnlAfrigter: TPanel;
+    lblGebruiker: TLabel;
+    bbnExit: TBitBtn;
+    procedure pnlOrganiseerderClick(Sender: TObject);
+    procedure pnlAfrigterClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmWelkom: TfrmWelkom;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmWelkom.FormCreate(Sender: TObject);
+begin
+{if (Screen.MonitorCount) >1 then
+begin
+//frmWelkom.SetBounds(Screen.DesktopLeft,Screen.DesktopTop, Screen.DesktopWidth, screen.DesktopHeight);
+end;
+//frmWelkom.BoundsRect:=screen.DesktopRect;         }
+end;
+
+procedure TfrmWelkom.pnlAfrigterClick(Sender: TObject);
+begin
+frmWelkom.Hide;
+frmAfrigter.Show;
+end;
+
+procedure TfrmWelkom.pnlOrganiseerderClick(Sender: TObject);
+begin
+frmWelkom.Hide;
+frmOrganiseerder.Show;
+end;
+
+end.

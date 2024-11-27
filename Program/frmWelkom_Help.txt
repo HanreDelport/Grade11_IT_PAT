@@ -1,0 +1,11 @@
+Kies tussen twee gebruikers, organiseerder of afrigter.
+
+Afrigter: Op hierdie skerm kan die afrigter van elke span kyk na sy/haar span se prestasie tot dusver in die toernooi. 
+Voordat die afrigter wel toegang het tot die informasie moet hy of sy verifieer word.
+Nadat u op die "Ondersoek u span se prestasie" knoppie gedruk het moet u asseblief u span se naam uit die boksie kies, u naam invul en laastens die wagwoord wat deur die organiseerder aan u verskaf is.
+Nadat u ingeteken is sal al die wedstryde gewys word. Daar is geen spanname in die kolomme nie, maar wel span ID's. U kan nou kyk na die wedstryd se telling en hoe u span gevaar het.
+
+Organiseerder: Op die organiseerder se skerm kan hy of sy 'n toernooi beplan. Die organiseerder kan die tipe toernooi-
+formaat kies en dan al die spanne wat in die toernooi gaan deelneem se name inlees. Verder kan die organiseerder spanne se
+inligting verander of verwyder. Die organiseerder kan dan die toernooi begin en na elke wedstryd die tellings vir die
+spesifieke wedstryd inlees. Die program sal self kan vastel wie die wenner van die toernooi is. 

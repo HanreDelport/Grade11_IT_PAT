@@ -1,0 +1,20 @@
+program Project1;
+
+uses
+  Forms,
+  GR11PAT_u in 'GR11PAT_u.pas' {frmWelkom},
+  GR11PAT_u2 in 'GR11PAT_u2.pas' {frmOrganiseerder},
+  GR11PAT_u3 in 'GR11PAT_u3.pas' {frmAfrigter},
+  Database_u in 'Database_u.pas' {Form1};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmWelkom, frmWelkom);
+  Application.CreateForm(TfrmOrganiseerder, frmOrganiseerder);
+  Application.CreateForm(TfrmAfrigter, frmAfrigter);
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

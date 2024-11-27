@@ -1,0 +1,18 @@
+program Project1;
+
+uses
+  Forms,
+  GR11PAT_u in 'GR11PAT_u.pas' {Form1},
+  GR11PAT_u2 in 'GR11PAT_u2.pas' {Form2},
+  GR11PAT_u3 in 'GR11PAT_u3.pas' {Form3};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TForm2, Form2);
+  Application.CreateForm(TForm3, Form3);
+  Application.Run;
+end.

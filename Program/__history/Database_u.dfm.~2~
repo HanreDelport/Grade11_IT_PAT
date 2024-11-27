@@ -1,0 +1,78 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 490
+  ClientWidth = 642
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object DBGrid1: TDBGrid
+    Left = 24
+    Top = 152
+    Width = 329
+    Height = 145
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+  end
+  object DBGrid2: TDBGrid
+    Left = 24
+    Top = 312
+    Width = 329
+    Height = 145
+    TabOrder = 1
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+  end
+  object ADOConnection1: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\Hanre Delport\I' +
+      'T PAT GR11\Program\Toernooi_DB.mdb;Mode=ReadWrite;Persist Securi' +
+      'ty Info=False'
+    LoginPrompt = False
+    Mode = cmReadWrite
+    Provider = 'Microsoft.ACE.OLEDB.12.0'
+    Left = 64
+    Top = 56
+  end
+  object ADOTable1: TADOTable
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    TableName = 'tblSpanInfo'
+    Left = 192
+    Top = 56
+  end
+  object DataSource1: TDataSource
+    DataSet = ADOTable1
+    Left = 272
+    Top = 64
+  end
+  object ADOTable2: TADOTable
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    TableName = 'tblWedstrydInfo'
+    Left = 192
+    Top = 8
+  end
+  object DataSource2: TDataSource
+    DataSet = ADOTable2
+    Left = 272
+    Top = 8
+  end
+end

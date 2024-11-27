@@ -1,0 +1,58 @@
+unit GR11PAT_u;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ExtCtrls, jpeg, Buttons, DB, ADODB;
+
+type
+  TfrmWelkom = class(TForm)
+    imgBackground: TImage;
+    pnlLogo: TPanel;
+    pnlOrganiseerder: TPanel;
+    pnlAfrigter: TPanel;
+    lblGebruiker: TLabel;
+    bbnExit: TBitBtn;
+    conDB: TADOConnection;
+    tblSpanInfo: TADOTable;
+    dsSpanInfo: TDataSource;
+    tblWedstrydInfo: TADOTable;
+    dsWedstrydInfo: TDataSource;
+    procedure pnlOrganiseerderClick(Sender: TObject);
+    procedure pnlAfrigterClick(Sender: TObject);
+    procedure bbnExitClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmWelkom: TfrmWelkom;
+
+implementation
+uses
+GR11PAT_u2 , GR11PAT_u3;
+
+{$R *.dfm}
+
+
+procedure TfrmWelkom.bbnExitClick(Sender: TObject);
+begin
+Application.MainForm.Close;
+end;
+
+procedure TfrmWelkom.pnlAfrigterClick(Sender: TObject);
+begin
+frmWelkom.Hide;
+frmAfrigter.Show;
+end;
+
+procedure TfrmWelkom.pnlOrganiseerderClick(Sender: TObject);
+begin
+frmWelkom.Hide;
+frmOrganiseerder.Show;
+end;
+
+end.
